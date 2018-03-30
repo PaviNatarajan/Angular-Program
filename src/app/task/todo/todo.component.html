@@ -1,0 +1,10 @@
+<p>
+  Task Manager
+</p>
+TASK:<input type="text" [(ngModel)]="sometask" ><br><br>
+<button (click)="addtask(sometask)">ADD TASK</button>
+<ul>
+  <li *ngFor="let t of tasklist;let currenttask=index">
+    {{t}}<button (click)="deletetask(currenttask)">Delete</button>
+  </li>
+</ul>

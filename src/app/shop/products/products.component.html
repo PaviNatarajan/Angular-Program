@@ -1,0 +1,15 @@
+
+<p>
+  products works!</p>
+
+  List of product:{{product}}
+
+<ol>
+    <li *ngFor="let product of product; 
+     let i=index "
+    (click)="giftme(i)">
+     {{i}}.{{product}}
+
+</li>  
+  </ol>
+
